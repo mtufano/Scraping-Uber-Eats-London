@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
+import sqlite3
+import logging
 
 class Scraper:
     def __init__(self, url: str):
@@ -84,6 +86,49 @@ class Scraper:
         else:
             print("No restaurant data to save")
 
+    def save_to_db(self, db_name: str, restaurant_data):
+        try:
+            # Create or connect to a SQLite database
+            with sqlite3.connect(db_name) as conn:
+                c = conn.cursor()
+
+                # Create tables if they don't exist
+                c.execute('''CREATE TABLE IF NOT EXISTS restaurant (
+                                id INTEGER PRIMARY KEY,
+                                name TEXT,
+                                cuisine TEXT,
+                                street_address TEXT,
+                                locality TEXT,
+                                region TEXT,
+                                postal_code TEXT,
+                                country TEXT,
+                                latitude REAL,
+                                longitude REAL,
+                                rating REAL,
+                                review_count INTEGER
+                            )''')
+
+                # Adjust the INSERT statement to match the new schema
+                c.execute('''INSERT INTO restaurant 
+                             (name, cuisine, street_address, locality, region, postal_code, country, 
+                             latitude, longitude, rating, review_count) 
+                             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
+                          (restaurant_data['Name'], restaurant_data['Cuisine'],
+                           restaurant_data['Address'], restaurant_data['AddressLocality'], 
+                           restaurant_data['AddressRegion'], restaurant_data['PostalCode'],
+                           restaurant_data['AddressCountry'], restaurant_data['Latitude'], 
+                           restaurant_data['Longitude'], restaurant_data['Rating'], 
+                           restaurant_data['ReviewCount']))
+
+                # Commit is handled automatically by the context manager
+
+        except sqlite3.Error as e:
+            logging.error(f"SQLite error: {e}")
+            # Optionally, handle or re-raise
+
+        except Exception as e:
+            logging.error(f"General error in save_to_db: {e}")
+            # Optionally, handle or re-raise
 
 # Example usage
 # URL of the webpage you want to scrape
