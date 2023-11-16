@@ -105,21 +105,26 @@ class Scraper:
                             )''')
 
                 # Extracting address and geo data
-                address = restaurant_data['address']
-                geo = restaurant_data['geo']
-
-                # Combine address components into a single 'Address' field
+                address = restaurant_data.get('address', {})
+                geo = restaurant_data.get('geo', {})
+                # Default values for potentially missing keys
+                rating_value = restaurant_data.get('aggregateRating', {}).get('ratingValue', None)
+                review_count = restaurant_data.get('aggregateRating', {}).get('reviewCount', None)
+                
                 full_address = ', '.join([address.get(key, '') for key in ['streetAddress', 'addressLocality', 'addressRegion', 'postalCode', 'addressCountry']])
 
                 # Insert restaurant data
                 c.execute('''INSERT INTO restaurant 
                             (name, cuisine, address, latitude, longitude, rating, review_count) 
                             VALUES (?, ?, ?, ?, ?, ?, ?)''',
-                        (restaurant_data['name'], ', '.join(restaurant_data['servesCuisine']),
-                        full_address, geo['latitude'], geo['longitude'],
-                        restaurant_data['aggregateRating']['ratingValue'],
-                        restaurant_data['aggregateRating']['reviewCount']))
-                
+                        (restaurant_data.get('name', 'Unknown'), 
+                        ', '.join(restaurant_data.get('servesCuisine', [])),
+                        full_address, 
+                        restaurant_data.get('geo', {}).get('latitude', None),
+                        restaurant_data.get('geo', {}).get('longitude', None),
+                        rating_value,
+                        review_count))
+
                 # Create menu table if it doesn't exist
                 c.execute('''CREATE TABLE IF NOT EXISTS menu (
                                 id INTEGER PRIMARY KEY,
@@ -152,10 +157,11 @@ class Scraper:
 
 
 
-# Function to read URLs from a file
 def read_urls_from_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
-        return [line.strip() for line in file.readlines()] 
+        unique_urls = set(line.strip() for line in file)
+    return list(unique_urls)
+
     
 def scrape_single_url(url, db_name):
     try:
@@ -164,6 +170,7 @@ def scrape_single_url(url, db_name):
         if soup:
             menu_items = scraper.extract_menu_data(soup)
             restaurant_data = scraper.extract_restaurant_info(soup)
+
             if restaurant_data and menu_items:
                 scraper.save_to_db(db_name, restaurant_data, menu_items)
             else:
@@ -171,6 +178,15 @@ def scrape_single_url(url, db_name):
         else:
             print(f"Failed to fetch or parse the webpage: {url}")
         time.sleep(random.uniform(1, 3))
+
+    except requests.HTTPError as e:
+        if e.response.status_code == 503:
+            print(f"Service temporarily unavailable for URL: {url}")
+            # Implement retry logic here if desired
+        else:
+            print(f"HTTP Error for {url}: {e}")
+        return url
+    
     except Exception as e:
         logging.error(f"Failed to scrape {url}: {e}")
         return url
@@ -181,7 +197,7 @@ def scrape_urls(file_path, db_name):
     failed_urls = []
 
     # Define the maximum number of threads
-    MAX_THREADS = 15  # Start with a lower number and adjust as needed
+    MAX_THREADS = 5  # Start with a lower number and adjust as needed
 
     # Using ThreadPoolExecutor to create and manage threads
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
@@ -203,8 +219,8 @@ def scrape_urls(file_path, db_name):
                 file.write(url + '\n')
 
 # Example usage
-input_file = "./data/test.txt"  # Path to the file containing URLs
-scrape_urls(input_file, "uber_test.db")
+input_file = "./data/london-rest-urls.txt"  # Path to the file containing URLs
+scrape_urls(input_file, "./data/uber_london.db")
 
 
 # # URL of the webpage you want to scrape
