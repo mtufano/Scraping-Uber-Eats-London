@@ -19,11 +19,13 @@ from bs4 import BeautifulSoup
 from pandas import DataFrame, read_csv, concat
 from requests import get, HTTPError
 import concurrent.futures
+import backoff
 
 class Scraper:
     def __init__(self, url: str):
         self.url = url
-
+        
+    @backoff.on_exception(backoff.expo, requests.exceptions.HTTPError, max_time=300)
     def fetch_and_parse(self):
         try:
             response = requests.get(self.url, headers={
@@ -33,8 +35,14 @@ class Scraper:
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
             return soup
-        except requests.HTTPError as e:
-            print(f"HTTP Error: {e}")
+        # except requests.HTTPError as e:
+        #     if e.response.status_code == 429:
+        #         retry_after = e.response.headers.get('Retry-After')
+        #         if retry_after:
+        #             time.sleep(int(retry_after))
+        #         else:
+        #             time.sleep(60)  # Default backoff
+        #     raise
         except Exception as e:
             print(f"Error: {e}")
     
@@ -159,11 +167,17 @@ class Scraper:
 
 def read_urls_from_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
-        unique_urls = set(line.strip() for line in file)
+        unique_urls = set(line.strip() for line in file if line.strip())
+    
+    num_urls = len(unique_urls)
+    print(f"Number of unique URLs to query: {num_urls}")
     return list(unique_urls)
+
 
     
 def scrape_single_url(url, db_name):
+    failed_urls = []
+
     try:
         scraper = Scraper(url)
         soup = scraper.fetch_and_parse()
@@ -175,9 +189,11 @@ def scrape_single_url(url, db_name):
                 scraper.save_to_db(db_name, restaurant_data, menu_items)
             else:
                 print(f"No data extracted from {url}")
+                failed_urls.append(url)
         else:
             print(f"Failed to fetch or parse the webpage: {url}")
-        time.sleep(random.uniform(1, 3))
+            failed_urls.append(url)
+        time.sleep(random.uniform(5, 10))
 
     except requests.HTTPError as e:
         if e.response.status_code == 503:
@@ -185,12 +201,18 @@ def scrape_single_url(url, db_name):
             # Implement retry logic here if desired
         else:
             print(f"HTTP Error for {url}: {e}")
-        return url
-    
+        failed_urls.append(url)
+
     except Exception as e:
         logging.error(f"Failed to scrape {url}: {e}")
-        return url
+        failed_urls.append(url)
 
+    # Save failed URLs to a file
+    with open('failed_urls.txt', 'w', encoding='utf-8') as file:
+        for url in failed_urls:
+            file.write(url + '\n')
+
+    return failed_urls
 # Modified function to scrape URLs using multithreading
 def scrape_urls(file_path, db_name):
     urls = read_urls_from_file(file_path)
@@ -216,11 +238,13 @@ def scrape_urls(file_path, db_name):
 
         with open('failed_urls_multithreaded.txt', 'w', encoding='utf-8') as file:
             for url in failed_urls:
-                file.write(url + '\n')
+                for item in url:
+                    file.write(item + '\n')
+
 
 # Example usage
-input_file = "./data/london-rest-urls.txt"  # Path to the file containing URLs
-scrape_urls(input_file, "./data/uber_london.db")
+input_file = "./data/london-urls-unique.txt"  # Path to the file containing URLs
+scrape_urls(input_file, "./data/uber_london_test.db")
 
 
 # # URL of the webpage you want to scrape

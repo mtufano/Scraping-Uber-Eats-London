@@ -1,0 +1,110 @@
+Number of unique URLs to query: 2475
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-ice-cream-shop/9Rnp6AV3SY2DI6XGw0oMUQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/eataly-boston/mZD14VWAXnOkF9C7Q7LUwg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/chauncy-liquor-mart/7kDX-PgcXQCLgNqilkEctA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/speedway-296-n-pearl-st/vlBG2g7UUYeV3vpfkYBWZg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/e-z-liquors/vjPKn5tJTJ-nYl9_mu0FVA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/target-boston-beacon-hill/Kq59swMeUk-jMXJg4XERHg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-flash-33-kilmarnock-st/IiTPedsBWq61rujASK2SKw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-flash-795-providence-hwy/r9uas3S2X3Cm7Xsdpt3BwA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/staples-1660-soldiers-field-rd/ps03rC_sXiC_IKPCqg-jWA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/walgreens-24-school-st/I1x9IlCyQwGaA7_ZDRPT-g: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-55-summer-street/x_2c5XbrWt60wdYedo_DRA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-fresh-market-11-essington-drive/BZHlDxReWy2ug6ieRUbVxA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/total-wine-%26-more-180-pearl-street/1MTAMHGmWL6K4ncHNZf-Rg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/guys-liquor/JpJNucD8U22R8__Y-lo3KA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/rite-aid-467-broadway/Lg2W8fMzUBePvAlIWQHqmQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/sullivan-square-liquors/hFhbZL8AVk2KKMrl38k0iw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-631-washington-st/XyEqPlqbXruwOW8ZsASHcg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/gopuff-convenience-home-%26-more/xjHj7lOQTlG5MslS1X0OVw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-ice-cream-shop/NsQ3ylNkRuS5inO0Wi6JHw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/edible-arrangements-350-b-moody-street/DPHqrbgYU52qBFSJJIR9gw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/back-bay-wine-%26-spirits/iX-4nIguVuK8qTxbhn163w: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/allstar-liquor/VwLdlNaYXy2FYJ9zrtTLUw: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/oath-pizza-central-sq/MMaTdl3mTCe34d5ZTHhpVQ
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/oath-pizza-central-sq/MMaTdl3mTCe34d5ZTHhpVQ
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/cafeto/RXI8or9uXWK7ubvPL7Xk5Q
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/cafeto/RXI8or9uXWK7ubvPL7Xk5Q
+ERROR:root:Failed to scrape https://www.ubereats.com/store/staples-165-middlesex-ave/MW2xyRcLXyWicxy4_yvVnA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/7-eleven-241-market-st/R7MnTCfIQKy6h_k9RU6OXQ: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/marquitos-kitchen/1j7AVOfwUzWIfEFvtUa8qQ
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/marquitos-kitchen/1j7AVOfwUzWIfEFvtUa8qQ
+ERROR:root:Failed to scrape https://www.ubereats.com/store/gopuff-convenience-home-%26-more/MOHO-vFETli5SiTMju4HQg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-85-seaport-blvd-unit-h/6OAENde_WT2hf__satFvfA: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/baisakhi-dhaba/hhqha70jWHukc_ci3R51bA
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/baisakhi-dhaba/hhqha70jWHukc_ci3R51bA
+ERROR:root:Failed to scrape https://www.ubereats.com/store/petsmart-everett/_KW4cN49X-mP2cIqGhEswA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/target-somerville/w1GRQiiMVKm5CsbsFA46Wg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/simmons-liquor/lgzM_8uWXl29TLsP5xKDiA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-626-southern-artery-rte-3a/LKfGG3y8XYupGobOw_iWvA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-101-canal-street/FYcu6PLdWeGpBN9Zm_PJQg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/speedway-630-squire-rd/kbxxonRdXM-S0M_1i7Tv-g: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-587-boylston-street/UnWR1joEUcijEC10WBeP-g: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/staples-1-washington-mall/5PAvyCNaVsC-LhCETcB7EQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/total-wine-%26-more-100-independence-way/V3ZpPVNQXPOpsqDCf_zy5Q: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-ice-cream-shop/waQDb64QR-O6Nq5sIZK3BA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-ice-cream-shop/ir8b7n7cTpqdcC7PE008ww: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/hollywood-liquors-roxbury-950-tremont-st/kYG6J3qeX42KCs-P2iOWpg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/south-peabody-liquor-mart/-deUOY1RW2O2NhWdHvtzyQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/montvale-convenience-96-montvale-ave/gOibqe65QSCn13sORUhHHw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-flash-130-granite-st/tNoaArCfViacMZUgGJk7rA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-90-causeway-st/Sn6ZrUbxVBKib8wLKz23jw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/first-united-market/NZRzbdhrU4ahaJo1FoyYlA: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/sheger-cafe-%26-ethiopian-restaurant/KScKyV_5RyCAD6zvLH1_Gw
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/sheger-cafe-%26-ethiopian-restaurant/KScKyV_5RyCAD6zvLH1_Gw
+ERROR:root:Failed to scrape https://www.ubereats.com/store/kristos-beer-%26-wine/cuhCIwi9Up2xYvjhZaWGEg: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/the-chicken-%26-rice-guys-food-truck-%233/1RMUATCmSsC8d-ezQiOS3A
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/the-chicken-%26-rice-guys-food-truck-%233/1RMUATCmSsC8d-ezQiOS3A
+ERROR:root:Failed to scrape https://www.ubereats.com/store/walgreens-1603-washington-st/y7mSgFtlTim5Uhqb_jRRjA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/woodys-liquors/S50PS4dPX4CCbc6UIs5DgA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/lyons-liquors/x1F-QlqPRiOZoNkIInCSFg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-350-longwood-avenue/OBh_l_f-VKOKZ6u5QX6NJA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/top-shelf/pKsRB_lhVKGQXqfL6o_NPA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/danvers-convenience%E2%80%A0431-newbury-st/7KXkkCkPQPGx5ZGmc1929Q: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/gopuff-liquor-%26-more/sMzmFEcIVoWYIMkHK-FSkQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/shaws-246-border-st/_beB1l-aU3CtAF9DwUUXSQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/target-boston-south-bay/DEO3OvGBUV-YYSmKjAlV5g: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-14-mcgrath-hwy/udzk9C8pVoqiBc1ZdetF6A: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/huntington-wine-%26-spirits/8rlVBFyoXia9scaG4GupDw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-ice-cream-shop/Lrl_Vn_SSSSJEScEdAkj5Q: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-370-western-ave/PE_87s1dWvSGp_-EMC5Rkg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/golden-goose-market/j6p9TcGaXDGiZACI9aZOdA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/boston-wine-exchange/vABl2dBZX966H2Ih6A8ZLg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/marlborough-market/AoaWFlibU-qV7Mf5wa9Vag: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/chelsea-liquor-mart/mDxMNR_ZQUq2GelBszY13w: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/audets-wine-%26-spirits/6decRC41UJasTtlRMv3z6Q: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/oath-pizza-chestnut-hill/J2lWwGlRS8KTMNfMu_xdPQ
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/oath-pizza-chestnut-hill/J2lWwGlRS8KTMNfMu_xdPQ
+ERROR:root:Failed to scrape https://www.ubereats.com/store/petsmart-cambridge/nXClxgoYUoCh8G_zr3pliw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/melrose-convenience-386-main-st/EVDKqEhnSzC851NszBKybg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/nicholas-st-market/fENcRXFiQg--I_ypy-KVBA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/walgreens-710-e-broadway/9J2SDBstQ3mNC_SjzC2t9g: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/somerville-wine-%26-spirits/416tHWvpWQ2pVJg_f9gPRQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/country-farms/kbo7-ETSQtyDkMjxs03iWw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/walgreens-16-beacon-st/e1bwsGE2SW2c18ZxXr4H1w: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/fernandez-brothers-liquors-152-boston-ave/4EBeZsf_V7anAGb8_IZFng: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/big-lots-revere/2hlDYnt4VgeA9TrxsZh4KQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-wild-duck-wine-and-spirits/4SrPbw3YW5GOHSxA8ssEQw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-53-huntington-ave/uaqyJ5NUVsiHLYktFi9imw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/target-boston-packards-corner/ztOF1uOSXWu8k5O2WISpwA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/party-city-everett/R8aYks72UxOV20QVpMpuvA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-218-hanover-street/BtGOAj_tUHaVWUx6Jtq5qg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cambridge-wine-%26-spirits/di82uB4MUdWO6IX8-HYsAg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/edible-arrangements-339-squire-road/Qb6JJBfsVDy4PBxc8VHHnw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/national-wine-%26-liquors/f-Cdkw4SVH-JEwqnTebqWQ: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/taco-mex-restaurant/DvmUI1znQFGBrDW4UbiFHw
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/taco-mex-restaurant/DvmUI1znQFGBrDW4UbiFHw
+ERROR:root:Failed to scrape https://www.ubereats.com/store/star-market-33-kilmarnock-st/hWPX8Y8gVRiI2_Oh4K6yKA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/party-city-brighton/5qko4MRfWga8APwXHSggrw: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/the-wild-duck/sJ6wSylJXk6bGTWJmAdmkA: 'NoneType' object is not subscriptable
+Error: 410 Client Error: Gone for url: https://www.ubereats.com/store/cloud-9-in-melrose/qaloMtE3SYCUQHktojC0yg
+Failed to fetch or parse the webpage: https://www.ubereats.com/store/cloud-9-in-melrose/qaloMtE3SYCUQHktojC0yg
+ERROR:root:Failed to scrape https://www.ubereats.com/store/city-liquors/a61yLP8ISiKrFrLtiwx21g: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-333-washington-street/VGBoLRYpUNqL2V5dAgy7kQ: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/speedway-295-cabot-st/xcNNbpz6WpK41EX-X12h7Q: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/walgreens-1-central-sq/JjIUljUNSsyWC-31AFar7Q: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/walgreens-530-somerville-ave-530-somerville-ave/P31MaQt6RGyABPgSaE17rg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/7-eleven-600-technology-square/R1Mkxt6JTIe9yqbStj5ztg: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/cvs-225-cambridge-st/Ta8al22LXEyZa-7lPxSUAA: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/speedway-615-broadway/J0hm5uQIUM6UqzYe5Hmz5Q: 'NoneType' object is not subscriptable
+ERROR:root:Failed to scrape https://www.ubereats.com/store/americas-food-basket-942-hyde-park-ave/X1wpQJ7LUcirCDFCyQUAxg: 'NoneType' object is not subscriptable
